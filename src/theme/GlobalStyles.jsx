@@ -6,6 +6,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
   --primaryColor: #E7E7E7;
   --secondaryColor: #696969;
+  --highlightColor: #E8833A;
+
   --primaryFont: 'Roboto', sans-serif;
   }
   *{

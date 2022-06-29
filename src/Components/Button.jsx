@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import GlobalStyle from '../theme/GlobalStyles'
 
-export default function Button() {
+export default function Button({ text, onclick }) {
+  
+  if (!text) {text = 'vazio'}
+  const [loading, setLoading] = useState(false)
+
   return (
     <>
-    <GlobalStyle/>
-    <Container>
-      <h1>Entrar</h1>
+    <GlobalStyle />
+    <Container onClick={onclick}>
+      <h1>{text}</h1>
     </Container>
     </>
   )

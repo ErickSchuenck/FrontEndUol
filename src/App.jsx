@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginScreen from './pages/LoginScreen'
-import Button from "./Components/Button";
+import StyledLoading from "./Components/StyledLoading";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<LoginScreen />} />
-        <Route path='/test' element={<Button />} />
+        <Route path='/test' element={<StyledLoading />} />
       </Routes>
     </BrowserRouter>
   );
